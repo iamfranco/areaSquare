@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.defect_box {
+  background: #333;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.input_area_container {
+  font-size: 48px;
+  position: fixed;
+  top: 0;
+}
+
+.input_area {
+  text-align: right;
+}
+
+input {
+  font-size: 48px;
+  width: 200px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+  background: #eee;
+}
+
+.measure_box_container {
+  position: fixed;
+  bottom: 5px;
+  width: 100vw;
+  text-align: center;
+}
+
+.measure_box {
+  width: 500px;
+  height: 5px;
+  background: #333;
+  margin: 0 auto;
+}
+
+.input_measured {
+  text-align: center;
+  width: 500px;
+}
