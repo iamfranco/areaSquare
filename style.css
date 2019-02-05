@@ -9,6 +9,9 @@ body {
             user-select: none;
 }
 
+::-moz-selection { background: #000; color: #fff }
+::selection { background: #000; color: #fff }
+
 .defect_box {
   background: #333;
   position: fixed;
@@ -18,26 +21,26 @@ body {
 }
 
 .input_area_container {
-  font-size: 48px;
+  font-size: 32px;
   position: fixed;
   top: 0;
 }
 
 .input_area {
   text-align: right;
+  width: 150px;
 }
 
 input {
-  font-size: 48px;
-  width: 200px;
+  font-size: 32px;
   border: none;
   margin: 0;
   padding: 0;
+  background: none;
 }
 
 input:focus {
   outline: none;
-  background: #eee;
 }
 
 .measure_box_container {
@@ -50,11 +53,28 @@ input:focus {
 .measure_box {
   width: 500px;
   height: 5px;
-  background: #333;
+  background: rgba(0,0,0,0.8);
   margin: 0 auto;
 }
 
 .input_measured {
   text-align: center;
   width: 500px;
+  margin-bottom: 5px;
+}
+
+.totype {
+  background: #fccb8f;
+}
+
+.totype:focus {
+  background: none;
+}
+
+.totype::placeholder {
+  color: #fff;
+}
+
+.totype:focus::placeholder {
+  color: #fccb8f;
 }
